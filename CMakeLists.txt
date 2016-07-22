@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(BIN server_make)
+set(BIN final)
 
 project( ${BIN} )
+
+set( CMAKE_CXX_FLAGS "-O0 -std=c++11" ) 
 
 set (LIBS boost_system pthread boost_thread)
 
